@@ -60,6 +60,30 @@ Func _DisplayTableByPaginaton($sTable, $iPage, $iLimit = 8)
     EndIf
 EndFunc
 
+Func _DisplayCharliesHighPrioIncompletedTodos()
+    Local Const $sSQL = StringFormat( _
+        "select     *\n" & _
+        "from       todos t\n" & _
+        "join       users u\n" & _
+        "    on     u.user_id = t.user_id\n" & _
+        "where      u.name = 'Charlie'\n" & _
+        "    and    t.priority = 'high'\n" & _
+        "    and    t.completed_at is null\n" & _
+        "    and    t.deleted_at is null")
+
+    Local Const $aResult = _Query($sSQL)
+    If @error Then
+        _Log('at _Query()')
+        Return SetError(1)
+    EndIf
+
+    _LogResult($aResult)
+    If @error Then
+        _Log('at _LogResult()')
+        Return SetError(1)
+    EndIf
+EndFunc
+
 Func _Query($sSQL)
     Local $aResult, $iRows, $iColumns
 

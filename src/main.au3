@@ -72,6 +72,11 @@ Func _Main()
         EndIf
     Next
 
+    _DisplayCharliesHighPrioIncompletedTodos()
+    If @error Then
+        _Log('at _DisplayCharliesHighPrioIncompletedTodos()')
+    EndIf
+
     ; A database shutdown, "_DBTearDown()", is called on exit
     ; by OnAutoItExitRegister() function. Otherwise next line
     ; should be comment-in.
