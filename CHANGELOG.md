@@ -13,6 +13,10 @@ Go to [legend](#legend---types-of-changes) for further information about the typ
 
 ## [0.2.0] - 2025-02-17
 
+### Added
+
+- One more SQLite statement (query) example. [b5f2485](https://github.com/sven-seyfert/sqlite-showcase/commit/b5f2485d910f28977a6382b8c720eb511283b3f6)
+
 ### Changed
 
 - Small adjustment for RunWait visibility. [89c0cf1](https://github.com/sven-seyfert/sqlite-showcase/commit/89c0cf180bf5edcf76366501938a2c532c28e615)
