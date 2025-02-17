@@ -26,23 +26,25 @@ The project "sqlite-showcase" is at the moment like the name already mentioned, 
 
 #### *Structure*
 
-The project/repository is structured in a module based way. This might be a bit unfamiliar for the most people regarding the usage of AutoIt. But for people coming from other programming languages, this is probably a familiar picture.
+The project/repository is structured in a module based way. This might be a bit unfamiliar for the most people regarding the usage of AutoIt. But for people coming from other programming languages, this is probably a familiar picture. [^1]
+
+[^1]: The `.gitkeep` files are only to ensure the empty folders are check-in. They can be deleted if you want to. Otherwise GIT would ignore empty folder, but the project needs them.
 
 #### *SQLite*
 
 - creates a SQLite database
-- runs a CREATE TABLE (schema) script [^1] and a INSERT INTO (seed) script
+- runs a CREATE TABLE (schema) script [^2] and a INSERT INTO (seed) script
   - data will only be inserted on the first run or if no data is in "users" table
 - displays "users" table content as console output and as array
 - displays "todos" table content as console output and as array
 - displays "todos" in a pagination style
   - showcase for using LIMIT and OFFSET in SQLite
 
-[^1]: The database schema example is based on a common TODO list structure.
+[^2]: The database schema example is based on a common TODO list structure.
 
 #### *Logging and error handling*
 
-The most possible failures are handled through the whole project. So you will find the usage of `SetError()` and `_Log()` a lot. In case of simply running the script, you will get the log statements printed to the console output. In case you build the application, a `./log/20250217.log` (YYYYMMDD.log) file will contain the information.
+The most possible failures are handled through the whole project. So you will find the usage of `SetError()` and `_Log()` a lot. In case of simply running the script, you will get the log statements printed to the console output. In case you build (compile) the application, a `./log/20250217.log` file (daily based log) will contain the information.
 
 **A concrete example:**
 
@@ -65,7 +67,7 @@ FileOpen() error
 	at _ExecuteSqlScript()
 ```
 
-So you can see by reading from bottom to the top, where the error came from and which functions are involved.
+So you can see by reading from top to the bottom, where the error occurs and which functions are walked through to this error. In other words, start your debugging at function `_ExecuteSqlScript()`, go to abstraction function `_ReadFile()` and find there the `FileOpen()` function which had an error in this example.
 
 ## Getting started
 
