@@ -27,7 +27,7 @@ Func _ExecuteSqlScriptLib($sFile)
         ' /c cd "%s" && %s "%s" < "%s"', _
         $mSqlite.Path, $mSqlite.Exe, $mDB.File, $sFile)
 
-    RunWait(@ComSpec & $sCommand, '', @SW_SHOW)
+    RunWait(@ComSpec & $sCommand, '', @SW_HIDE)
     If @error Then
         _Log('RunWait() error')
         Return SetError(1)
