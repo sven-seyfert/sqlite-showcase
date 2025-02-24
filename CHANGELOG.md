@@ -11,6 +11,27 @@ Go to [legend](#legend---types-of-changes) for further information about the typ
 
 ## [Unreleased]
 
+## [0.3.0] - 2025-02-24
+
+### Added
+
+- Prettier config file. [18a9dfa](https://github.com/sven-seyfert/sqlite-showcase/commit/18a9dfa4f046c72862275a9b15c0de70950266c3)
+
+### Changed
+
+- Adjust database schema (structure). [5dc3303](https://github.com/sven-seyfert/sqlite-showcase/commit/5dc330384458b369bcb09150745806c7265be421)
+- Adjust SQL test data. [888c201](https://github.com/sven-seyfert/sqlite-showcase/commit/888c201945cec928755ec0b7703d8e4e2d7ed112)
+- Update .gitignore file. [7f9bdb4](https://github.com/sven-seyfert/sqlite-showcase/commit/7f9bdb47281548dab94889a4279cc4acbc36bdfc)
+
+### Documented
+
+- Project version bump. [3e5efe3](https://github.com/sven-seyfert/sqlite-showcase/commit/3e5efe3d8317db44dc58bf327a3f60db23155d65)
+- Update README.md file. [3142d81](https://github.com/sven-seyfert/sqlite-showcase/commit/3142d81dc369bbb9da5db75c0bdd69d8804bc793)
+
+### Styled
+
+- Remove empty line. [c49a849](https://github.com/sven-seyfert/sqlite-showcase/commit/c49a849cfe1799317d3b9baa935e3812ac6d81ba)
+
 ## [0.2.0] - 2025-02-17
 
 ### Added
@@ -34,7 +55,8 @@ Go to [legend](#legend---types-of-changes) for further information about the typ
 - Initial commit (code, data, dependencies). [7d34e8b](https://github.com/sven-seyfert/sqlite-showcase/commit/7d34e8b1f8bb8550ad7368dcd705ce4b0ad7abb0)
 - Documentation and repository files (README, LICENSE, CHANGELOG). [6e292a9](https://github.com/sven-seyfert/sqlite-showcase/commit/6e292a9089175b47b8335dcd9c14ce79407aff88)
 
-[Unreleased]: https://github.com/sven-seyfert/sqlite-showcase/compare/v0.2.0...HEAD
+[Unreleased]: https://github.com/sven-seyfert/sqlite-showcase/compare/v0.3.0...HEAD
+[0.3.0]: https://github.com/sven-seyfert/sqlite-showcase/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/sven-seyfert/sqlite-showcase/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/sven-seyfert/sqlite-showcase/releases/tag/v0.1.0
 
