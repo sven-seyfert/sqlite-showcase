@@ -30,7 +30,7 @@ The project "sqlite-showcase" is at the moment like the name already mentioned, 
 
 The project/repository is structured in a module based way. This might be a bit unfamiliar for the most people regarding the usage of AutoIt. But for people coming from other programming languages, this is probably a familiar picture. [^1]
 
-[^1]: The `.gitkeep` files are only to ensure the empty folders are check-in. They can be deleted if you want to. Otherwise GIT would ignore empty folder, but the project needs them.
+[^1]: The `.gitkeep` files are only to ensure the empty folders are check-in. They can be deleted if you want to. Otherwise GIT would ignore an empty folder, but the project needs them.
 
 #### *SQLite*
 
