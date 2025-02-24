@@ -71,6 +71,15 @@ FileOpen() error
 
 So you can see by reading from top to the bottom, where the error occurs and which functions are walked through to this error. In other words, start your debugging at function `_ExecuteSqlScript()`, go to abstraction function `_ReadFile()` and find there the `FileOpen()` function which had an error in this example.
 
+#### *Tested with / System Under Test (SUT)*
+
+| Status          | OS version | x64 | x86 | AutoIt version | SQLite version |
+| ---             | ---        | --- | --- | ---            | ---            |
+| 🟢 successfully | Windows 10 | x   |     | v3.3.16.1      | v3.49.0        |
+| 🟡 open         | Windows 10 |     | x   | v3.3.16.1      | v3.49.0+       |
+| 🟡 open         | Windows 11 | x   |     | v3.3.16.1      | v3.49.0+       |
+| 🟡 open         | Windows 11 |     | x   | v3.3.16.1      | v3.49.0+       |
+
 ## Getting started
 
 #### *Preconditions*
