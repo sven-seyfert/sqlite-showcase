@@ -39,7 +39,7 @@ The project/repository is structured in a module based way. This might be a bit 
 - displays "todos" table content as console output and as array
 - displays "todos" in a pagination style
   - showcase for using LIMIT and OFFSET in SQLite
-- displays filtered todo entries of Charlie
+- displays filtered todo entries of Charlie Stein
   - showcase for using JOIN and IS NULL in SQLite
 
 [^2]: The database schema example is based on a common TODO list structure.
