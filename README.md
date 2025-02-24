@@ -22,7 +22,7 @@ The project "sqlite-showcase" is at the moment like the name already mentioned, 
 
 💡 But please note: This is my approach and there are various ways to deal with SQLite and error handling. But this one has proven itself for me over many projects and can also be found similar in other languages.
 
-👓 The database test data `./db/02-insert-into.sql` is AI generated and will be used in an upcoming project **"The SAHD Stack"** here on GitHub. So stay tuned.
+👓 The database test data `./db/02-insert-into.sql` is AI generated and will be used in an upcoming bigger project **"The SAHD Stack"** here on GitHub. So stay tuned.
 
 ## Features
 
