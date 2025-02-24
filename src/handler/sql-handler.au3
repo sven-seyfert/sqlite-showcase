@@ -66,7 +66,7 @@ Func _DisplayCharliesHighPrioIncompletedTodos()
         "from       todos t\n" & _
         "join       users u\n" & _
         "    on     u.user_id = t.user_id\n" & _
-        "where      u.name = 'Charlie'\n" & _
+        "where      u.name = 'Charlie Stein'\n" & _
         "    and    t.priority = 'high'\n" & _
         "    and    t.completed_at is null\n" & _
         "    and    t.deleted_at is null")
