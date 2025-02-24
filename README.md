@@ -20,7 +20,9 @@
 
 The project "sqlite-showcase" is at the moment like the name already mentioned, a showcase how to deal with SQLite in AutoIt. It also shows how to do proper logging and error handling. I want to use this to support discussions on SQLite and error handling in general, on the german and englisch AutoIt forums.
 
-💡 But please note: This is my approach and there are various ways to deal with SQLite and error handling. But this one has proven itself for me over many projects and can also be found in other languages.
+💡 But please note: This is my approach and there are various ways to deal with SQLite and error handling. But this one has proven itself for me over many projects and can also be found similar in other languages.
+
+👓 The database test data `./db/02-insert-into.sql` is AI generated and will be used in an upcoming project **"The SAHD Stack"** here on GitHub. So stay tuned.
 
 ## Features
 
