@@ -1,5 +1,5 @@
 #include-once
-#include "../init.au3"
+#include "..\init.au3"
 
 Func _DBStartup()
     _SQLite_Startup($mSqlite.DLL)

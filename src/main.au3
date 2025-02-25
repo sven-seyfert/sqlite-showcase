@@ -12,7 +12,7 @@
 #Au3Stripper_Parameters=/sf /sv /mo /rm /rsln
 
 #include-once
-#include "./init.au3"
+#include ".\init.au3"
 
 _Main()
 

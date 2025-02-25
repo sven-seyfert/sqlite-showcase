@@ -6,12 +6,12 @@
 Global $mSqlite[], $mDB[]
 Global $bNewStart = True
 
-#include "./handler/sql-handler.au3"
-#include "./handler/sqlite-handler.au3"
-#include "./maps/db.au3"
-#include "./maps/sqlite.au3"
-#include "./utils/file-handler.au3"
-#include "./utils/log-handler.au3"
+#include ".\handler\sql-handler.au3"
+#include ".\handler\sqlite-handler.au3"
+#include ".\maps\db.au3"
+#include ".\maps\sqlite.au3"
+#include ".\utils\file-handler.au3"
+#include ".\utils\log-handler.au3"
 
 Func _Init()
     If OnAutoItExitRegister('_DBTearDown') == 0 Then

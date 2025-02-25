@@ -1,5 +1,5 @@
 #include-once
-#include "../init.au3"
+#include "..\init.au3"
 
 Func _ReadFile($sFile, $iMode = 256)
     Local $hFile = FileOpen($sFile, $iMode)

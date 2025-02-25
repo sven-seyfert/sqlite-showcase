@@ -1,5 +1,5 @@
 #include-once
-#include "../init.au3"
+#include "..\init.au3"
 
 Func _ExecuteSqlScript($sFile)
     Local Const $sFileContent = _ReadFile($sFile)

@@ -1,5 +1,5 @@
 #include-once
-#include "../init.au3"
+#include "..\init.au3"
 
 Func _Log($sMessage, $sNewline = @CRLF)
     Local Const $sTimestamp = _Timestamp($sMessage)
@@ -10,7 +10,7 @@ Func _Log($sMessage, $sNewline = @CRLF)
     EndIf
 
     Local $sLogFile = StringFormat('%s%s%s.log', @YEAR, @MON, @MDAY)
-          $sLogFile = _PathFull('../log/' & $sLogFile)
+          $sLogFile = _PathFull('..\log\' & $sLogFile)
 
     If $bNewStart Then
         FileDelete($sLogFile)
