@@ -11,6 +11,16 @@ Go to [legend](#legend---types-of-changes) for further information about the typ
 
 ## [Unreleased]
 
+## [0.5.0] - 2025-02-25
+
+### Changed
+
+- Apply consistent usage of backwards slashes. [4cf72ab](https://github.com/sven-seyfert/sqlite-showcase/commit/4cf72ab6feea695944afb817a8e4b11d4cd51982)
+
+### Documented
+
+- Update README.md file. [8ac8145](https://github.com/sven-seyfert/sqlite-showcase/commit/8ac81459ce2ad576df381efb123f46e24e25d0bf)
+
 ## [0.4.0] - 2025-02-25
 
 ### Added
@@ -70,7 +80,8 @@ Go to [legend](#legend---types-of-changes) for further information about the typ
 - Initial commit (code, data, dependencies). [7d34e8b](https://github.com/sven-seyfert/sqlite-showcase/commit/7d34e8b1f8bb8550ad7368dcd705ce4b0ad7abb0)
 - Documentation and repository files (README, LICENSE, CHANGELOG). [6e292a9](https://github.com/sven-seyfert/sqlite-showcase/commit/6e292a9089175b47b8335dcd9c14ce79407aff88)
 
-[Unreleased]: https://github.com/sven-seyfert/sqlite-showcase/compare/v0.4.0...HEAD
+[Unreleased]: https://github.com/sven-seyfert/sqlite-showcase/compare/v0.5.0...HEAD
+[0.5.0]: https://github.com/sven-seyfert/sqlite-showcase/compare/v0.4.0...v0.5.0
 [0.4.0]: https://github.com/sven-seyfert/sqlite-showcase/compare/v0.3.0...v0.4.0
 [0.3.0]: https://github.com/sven-seyfert/sqlite-showcase/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/sven-seyfert/sqlite-showcase/compare/v0.1.0...v0.2.0
