@@ -4,7 +4,7 @@
 Func _ExecuteSqlScript($sFile)
     Local Const $sFileContent = _ReadFile($sFile)
     If @error Then
-        _Log('at _ReadFile()')
+        _Log('at: _ReadFile()')
         Return SetError(1)
     EndIf
 
@@ -79,7 +79,7 @@ Func _DisplayCharliesHighPrioIncompletedTodos()
 
     _LogResult($aResult)
     If @error Then
-        _Log('at _LogResult()')
+        _Log('at: _LogResult()')
         Return SetError(1)
     EndIf
 EndFunc

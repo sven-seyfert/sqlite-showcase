@@ -34,12 +34,20 @@ Func _Main()
         _Log('at: _DBOpen()')
         Exit -1
     EndIf
+
+    Local $sScript = '00-pre-configuration.sql'
+    _ExecuteSqlScript($mDB.Path & $sScript)
+    If @error Then
+        _Log('at: _ExecuteSqlScript()')
+        _Log('for: script ' & $sScript)
         Exit -1
     EndIf
 
-    _ExecuteSqlScript($mDB.Path & '01-create-tables.sql')
+    $sScript = '01-create-tables.sql'
+    _ExecuteSqlScript($mDB.Path & $sScript)
     If @error Then
         _Log('at: _ExecuteSqlScript()')
+        _Log('for: script ' & $sScript)
         Exit -1
     EndIf
 
@@ -50,9 +58,11 @@ Func _Main()
     EndIf
 
     If Not $bExists Then
-        _ExecuteSqlScript($mDB.Path & '02-insert-into.sql')
+        $sScript = '02-insert-into.sql'
+        _ExecuteSqlScript($mDB.Path & $sScript)
         If @error Then
             _Log('at: _ExecuteSqlScript()')
+            _Log('for: script ' & $sScript)
             Exit -1
         EndIf
     EndIf
@@ -77,6 +87,14 @@ Func _Main()
     _DisplayCharliesHighPrioIncompletedTodos()
     If @error Then
         _Log('at: _DisplayCharliesHighPrioIncompletedTodos()')
+    EndIf
+
+    $sScript = '99-post-configuration.sql'
+    _ExecuteSqlScript($mDB.Path & $sScript)
+    If @error Then
+        _Log('at: _ExecuteSqlScript()')
+        _Log('for: script ' & $sScript)
+        Exit -1
     EndIf
 
     ; A database shutdown, "_DBTearDown()", is called on exit
