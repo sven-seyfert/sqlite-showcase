@@ -20,9 +20,13 @@
 
 The project "sqlite-showcase" is at the moment like the name already mentioned, a showcase how to deal with SQLite in AutoIt. It also shows how to do proper logging and error handling. I want to use this to support discussions on SQLite and error handling in general, on the german and englisch AutoIt forums.
 
-💡 But please note: This is my approach and there are various ways to deal with SQLite and error handling. But this one has proven itself for me over many projects and can also be found similar in other languages.
+#### *Please note*
 
-👓 The database test data `./db/02-insert-into.sql` is AI generated and will be used in an upcoming bigger project **"The SAHD Stack"** here on GitHub. So stay tuned.
+This is **my** approach and there are various ways to deal with SQLite and error handling. But this one has proven itself for me over many projects and can also be found similar in other languages.
+
+#### *Upcoming*
+
+The database test data `./db/02-insert-into.sql` is AI generated and will be used in an upcoming bigger project 👓 **"The SAHD Stack"** here on GitHub. So stay tuned.
 
 ## Features
 
@@ -33,6 +37,14 @@ The project/repository is structured in a module based way. This might be a bit 
 [^1]: The `.gitkeep` files are only to ensure the empty folders are check-in. They can be deleted if you want to. Otherwise GIT would ignore an empty folder, but the project needs them.
 
 #### *SQLite*
+
+I am not a big fan of wrapping SQL statements into specific wrapper functions to support even more user-friendly "out-of-the-box" SQL usage. Most of the time a simple SQL statement string is totally fine instead of parameterize every possible INSERT or UPDATE statement.
+
+This been said, my assumption is you are familiar with SQL in general (at least a bit). See also [this note](#please-note).
+
+#### *Please note*
+
+==> What the SQL(ite) part in the program does:
 
 - creates a SQLite database
 - runs a CREATE TABLE (schema) script [^2] and a INSERT INTO (seed) script
