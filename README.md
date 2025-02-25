@@ -26,7 +26,8 @@ This is **my** approach and there are various ways to deal with SQLite and error
 
 #### *Upcoming*
 
-The database test data `./db/02-insert-into.sql` is AI generated and will be used in an upcoming bigger project 👓 **"The SAHD Stack"** here on GitHub. So stay tuned.
+The database test data `.\db\02-insert-into.sql` is AI generated and will be used in an upcoming bigger project.<br>
+👓 **"The SAHD Stack"** here on GitHub. So stay tuned.
 
 ## Features
 
@@ -62,7 +63,7 @@ This been said, my assumption is you are familiar with SQL in general (at least 
 
 #### *Logging and error handling*
 
-The most possible failures are handled through the whole project. So you will find the usage of `SetError()` and `_Log()` a lot. In case of simply running the script, you will get the log statements printed to the console output. In case you build (compile) the application, a `./log/20250217.log` file (daily based log) will contain the information.
+The most possible failures are handled through the whole project. So you will find the usage of `SetError()` and `_Log()` a lot. In case of simply running the script, you will get the log statements printed to the console output. In case you build (compile) the application, a `.\log\20250217.log` file (daily based log) will contain the information.
 
 **A concrete example:**
 
@@ -112,17 +113,17 @@ Fork or clone the repository. Alternatively you can download the [latest release
 
 #### *Usage*
 
-Open the project in your editor/IDE and navigate to folder `./src`. Open `main.au3` and run the program. By default, in case you fulfill the [preconditions](#preconditions), a `./db/todo.db` should be created and you should see several `_ArrayDisplay()` outputs. As console output you will see table content results (or error logging entries).
+Open the project in your editor/IDE and navigate to folder `.\src`. Open `main.au3` and run the program. By default, in case you fulfill the [preconditions](#preconditions), a `.\db\todo.db` should be created and you should see several `_ArrayDisplay()` outputs. As console output you will see table content results (or error logging entries).
 
-If you want to compile the application, simply do this on the `main.au3` level. Then you can switch to the folder `./build` and run the compiled program their. A `./log/*.log` file will be created in case of errors.
+If you want to compile the application, simply do this on the `main.au3` level. Then you can switch to the folder `.\build` and run the compiled program their. A `.\log\*.log` file will be created in case of errors.
 
 ## Configuration
 
 - If you are on a x86 system:
   - adjust the comiler information `#AutoIt3Wrapper_UseX64=y` to `=n`,
-  - adjust the SQLite dll name in `./src/maps/sqlite.au3` > `_InitSqliteMap()` function.
-- If you want to use your own database schema (structure), replace the script content of the `./db/*.sql` files.
-- If you want to rename the database, do it in `./src/maps/db.au3` > `_InitDBMap()` function.
+  - adjust the SQLite dll name in `.\src\maps\sqlite.au3` > `_InitSqliteMap()` function.
+- If you want to use your own database schema (structure), replace the script content of the `.\db\*.sql` files.
+- If you want to rename the database, do it in `.\src\maps\db.au3` > `_InitDBMap()` function.
 
 ## Contributing
 
@@ -137,6 +138,7 @@ Distributed under the MIT License. See [LICENSE](https://github.com/sven-seyfert
 - Opportunity by [GitHub](https://github.com)
 - Badges by [Shields](https://shields.io)
 - Thanks to the authors, maintainers and contributers of [SQLite](https://www.sqlite.org/copyright.html).
+- Also many thanks to all testers and contributes (among others from the english and german forum).
 
 ##
 
