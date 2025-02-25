@@ -19,62 +19,64 @@ _Main()
 Func _Main()
     _Init()
     If @error Then
-        _Log('at _Init()')
+        _Log('at: _Init()')
         Exit -1
     EndIf
 
     _DBStartup()
     If @error Then
-        _Log('at _DBStartup()')
+        _Log('at: _DBStartup()')
         Exit -1
     EndIf
 
     _DBOpen()
     If @error Then
-        _Log('at _DBOpen()')
+        _Log('at: _DBOpen()')
+        Exit -1
+    EndIf
         Exit -1
     EndIf
 
     _ExecuteSqlScript($mDB.Path & '01-create-tables.sql')
     If @error Then
-        _Log('at _ExecuteSqlScript()')
+        _Log('at: _ExecuteSqlScript()')
         Exit -1
     EndIf
 
     Local Const $bExists = _ExistsDataset('users')
     If @error Then
-        _Log('at _ExistsDataset()')
+        _Log('at: _ExistsDataset()')
         Exit -1
     EndIf
 
     If Not $bExists Then
         _ExecuteSqlScript($mDB.Path & '02-insert-into.sql')
         If @error Then
-            _Log('at _ExecuteSqlScript()')
+            _Log('at: _ExecuteSqlScript()')
             Exit -1
         EndIf
     EndIf
 
     _DisplayTable('users')
     If @error Then
-        _Log('at _DisplayTable()')
+        _Log('at: _DisplayTable()')
     EndIf
 
     _DisplayTable('todos')
     If @error Then
-        _Log('at _DisplayTable()')
+        _Log('at: _DisplayTable()')
     EndIf
 
     For $i = 1 To 5
         _DisplayTableByPaginaton('todos', $i)
         If @error Then
-            _Log('at _DisplayTableByPaginaton()')
+            _Log('at: _DisplayTableByPaginaton()')
         EndIf
     Next
 
     _DisplayCharliesHighPrioIncompletedTodos()
     If @error Then
-        _Log('at _DisplayCharliesHighPrioIncompletedTodos()')
+        _Log('at: _DisplayCharliesHighPrioIncompletedTodos()')
     EndIf
 
     ; A database shutdown, "_DBTearDown()", is called on exit

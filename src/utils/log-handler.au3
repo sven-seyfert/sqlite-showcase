@@ -19,13 +19,13 @@ Func _Log($sMessage, $sNewline = @CRLF)
 
     _AppendToFile($sLogFile, $sTimestamp & $sMessage & $sNewline)
     If @error Then
-        _Log('at _AppendToFile()')
+        _Log('at: _AppendToFile()')
         ; Damn! How to handle this circumstance?
     EndIf
 EndFunc
 
 Func _Timestamp($sMessage)
-    If StringLeft($sMessage, 3) == 'at ' Then
+    If StringLeft($sMessage, 4) == 'at: ' Or StringLeft($sMessage, 5) == 'for: ' Then
         Return @TAB
     EndIf
 
