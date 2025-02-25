@@ -11,6 +11,21 @@ Go to [legend](#legend---types-of-changes) for further information about the typ
 
 ## [Unreleased]
 
+## [0.4.0] - 2025-02-25
+
+### Added
+
+- Pre- and post configuration scripts (SQLite specific). [4cc9a27](https://github.com/sven-seyfert/sqlite-showcase/commit/4cc9a274a407908cbba69d80643383e33f25f7c0)
+
+### Documented
+
+- Project version bump. [53bf255](https://github.com/sven-seyfert/sqlite-showcase/commit/53bf255facc42d3542100ca94d104e713527b995)
+- Update README.md file. [a278992](https://github.com/sven-seyfert/sqlite-showcase/commit/a2789920b63b62d1811df70dea767bf00b8b2d22)
+
+### Styled
+
+- Small formatting adjustments. [e15f6b6](https://github.com/sven-seyfert/sqlite-showcase/commit/e15f6b6bda89be9f693c24fc87ebc0dc5d4e9936)
+
 ## [0.3.0] - 2025-02-24
 
 ### Added
@@ -55,7 +70,8 @@ Go to [legend](#legend---types-of-changes) for further information about the typ
 - Initial commit (code, data, dependencies). [7d34e8b](https://github.com/sven-seyfert/sqlite-showcase/commit/7d34e8b1f8bb8550ad7368dcd705ce4b0ad7abb0)
 - Documentation and repository files (README, LICENSE, CHANGELOG). [6e292a9](https://github.com/sven-seyfert/sqlite-showcase/commit/6e292a9089175b47b8335dcd9c14ce79407aff88)
 
-[Unreleased]: https://github.com/sven-seyfert/sqlite-showcase/compare/v0.3.0...HEAD
+[Unreleased]: https://github.com/sven-seyfert/sqlite-showcase/compare/v0.4.0...HEAD
+[0.4.0]: https://github.com/sven-seyfert/sqlite-showcase/compare/v0.3.0...v0.4.0
 [0.3.0]: https://github.com/sven-seyfert/sqlite-showcase/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/sven-seyfert/sqlite-showcase/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/sven-seyfert/sqlite-showcase/releases/tag/v0.1.0
