@@ -44,17 +44,19 @@ This been said, my assumption is you are familiar with SQL in general (at least 
 
 #### *Please note*
 
-==> What the SQL(ite) part in the program does:
+==> What the SQLite part in the program does:
 
+- sets some *PRAGMA* settings (pre-configuration)
 - creates a SQLite database
-- runs a CREATE TABLE (schema) script [^2] and a INSERT INTO (seed) script
+- runs a *CREATE TABLE* (schema) script [^2] and a *INSERT INTO* (seed) script
   - data will only be inserted on the first run or if no data is in "users" table
 - displays "users" table content as console output and as array
 - displays "todos" table content as console output and as array
 - displays "todos" in a pagination style
-  - showcase for using LIMIT and OFFSET in SQLite
+  - showcase for using *LIMIT* and *OFFSET* in SQLite
 - displays filtered todo entries of Charlie Stein
-  - showcase for using JOIN and IS NULL in SQLite
+  - showcase for using *JOIN* and *IS NULL* in SQLite
+- runs *VACUUM* to reorganizes the database (post-configuration)
 
 [^2]: The database schema example is based on a common TODO list structure.
 
@@ -69,7 +71,8 @@ The CREATE TABLE script `01-create-tables.sql` is been executed.
 ``` autoit
 _ExecuteSqlScript($mDB.Path & '01-create-tables.sql')
 If @error Then
-    _Log('at _ExecuteSqlScript()')
+    _Log('at: _ExecuteSqlScript()')
+    _Log('for: script ' & $sScript)
     Exit -1
 EndIf
 ```
@@ -79,8 +82,9 @@ In case of an error, the console output will look like this:
 ``` log
 [2025-02-17 06:48:13.389]
 FileOpen() error
-	at _ReadFile()
-	at _ExecuteSqlScript()
+	at: _ReadFile()
+	at: _ExecuteSqlScript()
+	for: script 01-create-tables.sql
 ```
 
 So you can see by reading from top to the bottom, where the error occurs and which functions are walked through to this error. In other words, start your debugging at function `_ExecuteSqlScript()`, go to abstraction function `_ReadFile()` and find there the `FileOpen()` function which had an error in this example.
