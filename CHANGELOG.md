@@ -11,6 +11,22 @@ Go to [legend](#legend---types-of-changes) for further information about the typ
 
 ## [Unreleased]
 
+## [0.6.0] - 2025-02-26
+
+### Changed
+
+- Unique log files instead of deleting old ones. [e67a362](https://github.com/sven-seyfert/sqlite-showcase/commit/e67a362384dcb86707088c12f460ac1ff1e5e396)
+- Update create table statements (no autoincrement usage (not necessary)). [95bfe7b](https://github.com/sven-seyfert/sqlite-showcase/commit/95bfe7bee60ca23bef1bb50ee39efb044f3060d6)
+- Update SQLite PRAGMA busy_timeout. [a65a9af](https://github.com/sven-seyfert/sqlite-showcase/commit/a65a9afe31b22fa20ff0c442e25064ae4a5602d0)
+
+### Refactored
+
+- Adjust _DBTeardown calling. [c873b8e](https://github.com/sven-seyfert/sqlite-showcase/commit/c873b8eb3626afc64d3b7a6206daa9da0c5f2236)
+
+### Styled
+
+- Update favicon icon. [d423445](https://github.com/sven-seyfert/sqlite-showcase/commit/d4234459e8be8cd683ed676be9203951c9642c07)
+
 ## [0.5.0] - 2025-02-25
 
 ### Changed
@@ -80,7 +96,8 @@ Go to [legend](#legend---types-of-changes) for further information about the typ
 - Initial commit (code, data, dependencies). [7d34e8b](https://github.com/sven-seyfert/sqlite-showcase/commit/7d34e8b1f8bb8550ad7368dcd705ce4b0ad7abb0)
 - Documentation and repository files (README, LICENSE, CHANGELOG). [6e292a9](https://github.com/sven-seyfert/sqlite-showcase/commit/6e292a9089175b47b8335dcd9c14ce79407aff88)
 
-[Unreleased]: https://github.com/sven-seyfert/sqlite-showcase/compare/v0.5.0...HEAD
+[Unreleased]: https://github.com/sven-seyfert/sqlite-showcase/compare/v0.6.0...HEAD
+[0.6.0]: https://github.com/sven-seyfert/sqlite-showcase/compare/v0.5.0...v0.6.0
 [0.5.0]: https://github.com/sven-seyfert/sqlite-showcase/compare/v0.4.0...v0.5.0
 [0.4.0]: https://github.com/sven-seyfert/sqlite-showcase/compare/v0.3.0...v0.4.0
 [0.3.0]: https://github.com/sven-seyfert/sqlite-showcase/compare/v0.2.0...v0.3.0
