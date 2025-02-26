@@ -20,8 +20,12 @@ Func _Log($sMessage, $sNewline = @CRLF)
 EndFunc
 
 Func _Timestamp($sMessage)
-    If StringLeft($sMessage, 3) == 'at ' Or StringLeft($sMessage, 5) == 'for: ' Then
+    If StringLeft($sMessage, 3) == 'at ' Then
         Return @TAB
+    EndIf
+
+    If StringLeft($sMessage, 5) == 'for: ' Then
+        Return ''
     EndIf
 
     Return StringFormat( _

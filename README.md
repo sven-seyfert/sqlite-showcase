@@ -85,7 +85,7 @@ In case of an error, the console output will look like this:
 FileOpen() error
 	at _ReadFile()
 	at _ExecuteSqlScript()
-	for: script 01-create-tables.sql
+for: script 01-create-tables.sql
 ```
 
 So you can see by reading from top to the bottom, where the error occurs and which functions are walked through to this error. In other words, start your debugging at function `_ExecuteSqlScript()`, go to abstraction function `_ReadFile()` and find there the `FileOpen()` function which had an error in this example.
