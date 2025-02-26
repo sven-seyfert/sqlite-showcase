@@ -10,7 +10,17 @@ Func _DBStartup()
 EndFunc
 
 Func _DBTearDown()
+    If $bAlreadyExecuted Then
+        Return
+    EndIf
+    $bAlreadyExecuted = True
+
     _SQLite_Close()
+    If @error Then
+        _Log('_SQLite_Close() error')
+        Return SetError(1)
+    EndIf
+
     _SQLite_Shutdown()
 EndFunc
 

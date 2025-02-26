@@ -4,7 +4,7 @@
 #include <String.au3>
 
 Global $mSqlite[], $mDB[]
-Global $bNewStart = True
+Global $bAlreadyExecuted = False
 
 #include ".\handler\sql-handler.au3"
 #include ".\handler\sqlite-handler.au3"

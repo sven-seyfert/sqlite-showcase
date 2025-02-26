@@ -35,6 +35,19 @@ Func _Main()
         Exit -1
     EndIf
 
+    _Showcases()
+
+    ; The function "_DBTearDown()" (database shutdown), is called
+    ; on exit (in error case) by OnAutoItExitRegister() function.
+    ; In case of no errors, now.
+    _DBTearDown()
+    If @error Then
+        _Log('at: _DBTearDown()')
+        Exit -1
+    EndIf
+EndFunc
+
+Func _Showcases()
     Local $sScript = '00-pre-configuration.sql'
     _ExecuteSqlScript($mDB.Path & $sScript)
     If @error Then
@@ -96,9 +109,4 @@ Func _Main()
         _Log('for: script ' & $sScript)
         Exit -1
     EndIf
-
-    ; A database shutdown, "_DBTearDown()", is called on exit
-    ; by OnAutoItExitRegister() function. Otherwise next line
-    ; should be comment-in.
-    ;~ _DBTearDown()
 EndFunc
