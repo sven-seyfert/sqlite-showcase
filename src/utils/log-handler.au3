@@ -9,13 +9,8 @@ Func _Log($sMessage, $sNewline = @CRLF)
         Return
     EndIf
 
-    Local $sLogFile = StringFormat('%s%s%s.log', @YEAR, @MON, @MDAY)
-          $sLogFile = _PathFull('..\log\' & $sLogFile)
-
-    If $bNewStart Then
-        FileDelete($sLogFile)
-        $bNewStart = False
-    EndIf
+    Local Const $sFileName = StringFormat('%s%s%s%s%s%s.log', @YEAR, @MON, @MDAY, @HOUR, @MIN, @SEC)
+    Local Const $sLogFile  = _PathFull('..\log\' & $sFileName)
 
     _AppendToFile($sLogFile, $sTimestamp & $sMessage & $sNewline)
     If @error Then
