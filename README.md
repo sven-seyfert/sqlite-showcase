@@ -63,7 +63,7 @@ This been said, my assumption is you are familiar with SQL in general (at least 
 
 #### *Logging and error handling*
 
-The most possible failures are handled through the whole project. So you will find the usage of `SetError()` and `_Log()` a lot. In case of simply running the script, you will get the log statements printed to the console output. In case you build (compile) the application, a `.\log\20250217.log` file (daily based log) will contain the information.
+The most possible failures are handled through the whole project. So you will find the usage of `SetError()` and `_Log()` a lot. In case of simply running the script, you will get the log statements printed to the console output. In case you build (compile) the application, a `.\log\20250217220310.log` file will contain the information.
 
 **A concrete example:**
 
