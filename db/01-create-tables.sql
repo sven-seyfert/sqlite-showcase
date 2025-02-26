@@ -1,5 +1,5 @@
 CREATE TABLE IF NOT EXISTS users (
-    user_id         INTEGER     PRIMARY KEY AUTOINCREMENT,
+    user_id         INTEGER     PRIMARY KEY,
     name            TEXT        NOT NULL,
     nickname        TEXT,
     email           TEXT        UNIQUE,
@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXISTS users (
 );
 
 CREATE TABLE IF NOT EXISTS todos (
-    todo_id         INTEGER     PRIMARY KEY AUTOINCREMENT,
+    todo_id         INTEGER     PRIMARY KEY,
     user_id         INTEGER     NOT NULL,
     content         TEXT        NOT NULL,
     status          TEXT        NOT NULL DEFAULT 'open' CHECK(status IN ('open', 'ongoing', 'done', 'canceled')),
