@@ -72,7 +72,7 @@ The CREATE TABLE script `01-create-tables.sql` is been executed.
 ``` autoit
 _ExecuteSqlScript($mDB.Path & '01-create-tables.sql')
 If @error Then
-    _Log('at: _ExecuteSqlScript()')
+    _Log('at _ExecuteSqlScript()')
     _Log('for: script ' & $sScript)
     Exit -1
 EndIf
@@ -83,8 +83,8 @@ In case of an error, the console output will look like this:
 ``` log
 [2025-02-17 06:48:13.389]
 FileOpen() error
-	at: _ReadFile()
-	at: _ExecuteSqlScript()
+	at _ReadFile()
+	at _ExecuteSqlScript()
 	for: script 01-create-tables.sql
 ```
 

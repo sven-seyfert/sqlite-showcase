@@ -19,19 +19,19 @@ _Main()
 Func _Main()
     _Init()
     If @error Then
-        _Log('at: _Init()')
+        _Log('at _Init()')
         Exit -1
     EndIf
 
     _DBStartup()
     If @error Then
-        _Log('at: _DBStartup()')
+        _Log('at _DBStartup()')
         Exit -1
     EndIf
 
     _DBOpen()
     If @error Then
-        _Log('at: _DBOpen()')
+        _Log('at _DBOpen()')
         Exit -1
     EndIf
 
@@ -42,7 +42,7 @@ Func _Main()
     ; In case of no errors, now.
     _DBTearDown()
     If @error Then
-        _Log('at: _DBTearDown()')
+        _Log('at _DBTearDown()')
         Exit -1
     EndIf
 EndFunc
@@ -51,7 +51,7 @@ Func _Showcases()
     Local $sScript = '00-pre-configuration.sql'
     _ExecuteSqlScript($mDB.Path & $sScript)
     If @error Then
-        _Log('at: _ExecuteSqlScript()')
+        _Log('at _ExecuteSqlScript()')
         _Log('for: script ' & $sScript)
         Exit -1
     EndIf
@@ -59,14 +59,14 @@ Func _Showcases()
     $sScript = '01-create-tables.sql'
     _ExecuteSqlScript($mDB.Path & $sScript)
     If @error Then
-        _Log('at: _ExecuteSqlScript()')
+        _Log('at _ExecuteSqlScript()')
         _Log('for: script ' & $sScript)
         Exit -1
     EndIf
 
     Local Const $bExists = _ExistsDataset('users')
     If @error Then
-        _Log('at: _ExistsDataset()')
+        _Log('at _ExistsDataset()')
         Exit -1
     EndIf
 
@@ -74,7 +74,7 @@ Func _Showcases()
         $sScript = '02-insert-into.sql'
         _ExecuteSqlScript($mDB.Path & $sScript)
         If @error Then
-            _Log('at: _ExecuteSqlScript()')
+            _Log('at _ExecuteSqlScript()')
             _Log('for: script ' & $sScript)
             Exit -1
         EndIf
@@ -82,30 +82,30 @@ Func _Showcases()
 
     _DisplayTable('users')
     If @error Then
-        _Log('at: _DisplayTable()')
+        _Log('at _DisplayTable()')
     EndIf
 
     _DisplayTable('todos')
     If @error Then
-        _Log('at: _DisplayTable()')
+        _Log('at _DisplayTable()')
     EndIf
 
     For $i = 1 To 5
         _DisplayTableByPaginaton('todos', $i)
         If @error Then
-            _Log('at: _DisplayTableByPaginaton()')
+            _Log('at _DisplayTableByPaginaton()')
         EndIf
     Next
 
     _DisplayCharliesHighPrioIncompletedTodos()
     If @error Then
-        _Log('at: _DisplayCharliesHighPrioIncompletedTodos()')
+        _Log('at _DisplayCharliesHighPrioIncompletedTodos()')
     EndIf
 
     $sScript = '99-post-configuration.sql'
     _ExecuteSqlScript($mDB.Path & $sScript)
     If @error Then
-        _Log('at: _ExecuteSqlScript()')
+        _Log('at _ExecuteSqlScript()')
         _Log('for: script ' & $sScript)
         Exit -1
     EndIf

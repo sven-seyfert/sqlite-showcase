@@ -4,7 +4,7 @@
 Func _ExecuteSqlScript($sFile)
     Local Const $sFileContent = _ReadFile($sFile)
     If @error Then
-        _Log('at: _ReadFile()')
+        _Log('at _ReadFile()')
         Return SetError(1)
     EndIf
 
@@ -20,7 +20,7 @@ Func _ExistsDataset($sTable)
 
     Local Const $aResult = _Query($sSQL)
     If @error Then
-        _Log('at: _Query()')
+        _Log('at _Query()')
         Return SetError(1)
     EndIf
 
@@ -32,13 +32,13 @@ Func _DisplayTable($sTable)
 
     Local Const $aResult = _Query($sSQL)
     If @error Then
-        _Log('at: _Query()')
+        _Log('at _Query()')
         Return SetError(1)
     EndIf
 
     _LogResult($aResult)
     If @error Then
-        _Log('at: _LogResult()')
+        _Log('at _LogResult()')
         Return SetError(1)
     EndIf
 EndFunc
@@ -49,13 +49,13 @@ Func _DisplayTableByPaginaton($sTable, $iPage, $iLimit = 8)
 
     Local Const $aResult = _Query($sSQL)
     If @error Then
-        _Log('at: _Query()')
+        _Log('at _Query()')
         Return SetError(1)
     EndIf
 
     _LogResult($aResult)
     If @error Then
-        _Log('at: _LogResult()')
+        _Log('at _LogResult()')
         Return SetError(1)
     EndIf
 EndFunc
@@ -73,13 +73,13 @@ Func _DisplayCharliesHighPrioIncompletedTodos()
 
     Local Const $aResult = _Query($sSQL)
     If @error Then
-        _Log('at: _Query()')
+        _Log('at _Query()')
         Return SetError(1)
     EndIf
 
     _LogResult($aResult)
     If @error Then
-        _Log('at: _LogResult()')
+        _Log('at _LogResult()')
         Return SetError(1)
     EndIf
 EndFunc
