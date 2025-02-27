@@ -90,7 +90,7 @@ Func _Showcases()
         _Log('at _DisplayTable()')
     EndIf
 
-    For $i = 1 To 5
+    For $i = 1 To 10
         _DisplayTableByPaginaton('todos', $i)
         If @error Then
             _Log('at _DisplayTableByPaginaton()')
