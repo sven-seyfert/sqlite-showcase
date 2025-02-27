@@ -95,7 +95,7 @@ So you can see by reading from top to the bottom, where the error occurs and whi
 | Status        | OS version | x64 | x86 | AutoIt version | SQLite version | Note         |
 | ---           | ---        | --- | --- | ---            | ---            | ---          |
 | 🟢 successful | Windows 10 | x   |     | v3.3.16.1      | v3.49.0        |              |
-| 🟡 open       | Windows 10 |     | x   | v3.3.16.1      | v3.49.0        |              |
+| 🟡 open       | Windows 10 |     | x   | v3.3.16.1      | v3.49.1        |              |
 | 🟢 successful | Windows 11 | x   |     | v3.3.16.1      | v3.49.0        |              |
 | 🟣 open       | Windows 10 | x   |     | v3.3.16.1      | v3.49.0+       | nice to have |
 | 🟣 open       | Windows 10 |     | x   | v3.3.16.1      | v3.49.0+       | nice to have |
@@ -105,7 +105,9 @@ So you can see by reading from top to the bottom, where the error occurs and whi
 
 #### *Preconditions*
 
-As assumption, you already have AutoIt installed. You also use a x64 system, otherwise [download](https://www.sqlite.org/download.html) a SQLite precompiled binary for Windows like `sqlite-dll-win-x86-3490000.zip` for example. See also this [README](https://github.com/sven-seyfert/sqlite-showcase/blob/main/lib/sqlite/README.md) file for more information.
+As assumption, you already have AutoIt (at least in version v3.3.13.6) installed. That's basically it.<br>
+SQLite dll files for x64 and x86 are stored in `.\lib\sqlite` and can be replaced by newer versions from the download section [precompiled binaries for windows](https://www.sqlite.org/download.html).<br>
+See also this [README](https://github.com/sven-seyfert/sqlite-showcase/blob/main/lib/sqlite/README.md) file for more information.
 
 #### *Installation*
 
@@ -119,9 +121,7 @@ If you want to compile the application, simply do this on the `main.au3` level. 
 
 ## Configuration
 
-- If you are on a x86 system:
-  - adjust the comiler information `#AutoIt3Wrapper_UseX64=y` to `=n`,
-  - adjust the SQLite dll name in `.\src\maps\sqlite.au3` > `_InitSqliteMap()` function.
+- If you are on a x86 system, adjust the comiler information `#AutoIt3Wrapper_UseX64=y` to `=n`.
 - If you want to use your own database schema (structure), replace the script content of the `.\db\*.sql` files.
 - If you want to rename the database, do it in `.\src\maps\db.au3` > `_InitDBMap()` function.
 
