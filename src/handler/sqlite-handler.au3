@@ -2,7 +2,10 @@
 #include "..\init.au3"
 
 Func _DBStartup()
-    _SQLite_Startup($mSqlite.DLL)
+    Local Const $bUseUTF8ErrorMsg = False
+    Local Const $iLocalDllFlag    = 1
+
+    _SQLite_Startup($mSqlite.DLL, $bUseUTF8ErrorMsg, $iLocalDllFlag)
     If @error Then
         _Log('_SQLite_Startup() error')
         Return SetError(1)
