@@ -64,7 +64,7 @@ This been said, my assumption is you are familiar with SQL in general (at least 
 <details>
 <summary>🖼 How the data should be displayed</summary>
 
-![sqlite-showcase](sqlite-showcase.gif)
+![sqlite-showcase](./assets/images/sqlite-showcase.gif)
 
 </details>
 
