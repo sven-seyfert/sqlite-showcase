@@ -11,6 +11,25 @@ Go to [legend](#legend---types-of-changes) for further information about the typ
 
 ## [Unreleased]
 
+## [0.7.0] - 2025-02-27
+
+### Added
+
+- SQLite x86 dll. [84d0b30](https://github.com/sven-seyfert/sqlite-showcase/commit/84d0b303d9c66afc21b0de6568ea9910f5db0407)
+
+### Changed
+
+- Ensure SQLite dll is taken locally from lib folder instead elsewhere on the system. [667cec1](https://github.com/sven-seyfert/sqlite-showcase/commit/667cec1b8645ba3fb97d51c0694419b67fb45674)
+- Update log statement print behavior. [3d8cb6c](https://github.com/sven-seyfert/sqlite-showcase/commit/3d8cb6cd98e115f533bfec50a4ebf58db361aa83)
+
+### Documented
+
+- Update README.md file. [db392da](https://github.com/sven-seyfert/sqlite-showcase/commit/db392dace3472f2276e4016011d770254842bbb8)
+
+### Styled
+
+- Tiny log statement adjustments. [696737e](https://github.com/sven-seyfert/sqlite-showcase/commit/696737e52a30ead01474a258ec10aaef9d8f659b)
+
 ## [0.6.0] - 2025-02-26
 
 ### Changed
@@ -96,7 +115,8 @@ Go to [legend](#legend---types-of-changes) for further information about the typ
 - Initial commit (code, data, dependencies). [7d34e8b](https://github.com/sven-seyfert/sqlite-showcase/commit/7d34e8b1f8bb8550ad7368dcd705ce4b0ad7abb0)
 - Documentation and repository files (README, LICENSE, CHANGELOG). [6e292a9](https://github.com/sven-seyfert/sqlite-showcase/commit/6e292a9089175b47b8335dcd9c14ce79407aff88)
 
-[Unreleased]: https://github.com/sven-seyfert/sqlite-showcase/compare/v0.6.0...HEAD
+[Unreleased]: https://github.com/sven-seyfert/sqlite-showcase/compare/v0.7.0...HEAD
+[0.7.0]: https://github.com/sven-seyfert/sqlite-showcase/compare/v0.6.0...v0.7.0
 [0.6.0]: https://github.com/sven-seyfert/sqlite-showcase/compare/v0.5.0...v0.6.0
 [0.5.0]: https://github.com/sven-seyfert/sqlite-showcase/compare/v0.4.0...v0.5.0
 [0.4.0]: https://github.com/sven-seyfert/sqlite-showcase/compare/v0.3.0...v0.4.0
