@@ -92,11 +92,11 @@ So you can see by reading from top to the bottom, where the error occurs and whi
 
 #### *Tested with / System Under Test (SUT)*
 
-| Status        | OS version | x64 | x86 | AutoIt version | SQLite version | Note         |
-| ---           | ---        | --- | --- | ---            | ---            | ---          |
-| 🟢 successful | Windows 10 | x   |     | v3.3.16.1      | v3.49.0        |              |
-| 🟢 successful | Windows 10 |     | x   | v3.3.16.1      | v3.49.1        |              |
-| 🟢 successful | Windows 11 | x   |     | v3.3.16.1      | v3.49.0        |              |
+| Status        | OS version | x64 | x86 | AutoIt version | SQLite version | When tested |
+| ---           | ---        | --- | --- | ---            | ---            | ---         |
+| 🟢 successful | Windows 10 | x   |     | v3.3.16.1      | v3.49.0        | 2025-03-05  |
+| 🟢 successful | Windows 10 |     | x   | v3.3.16.1      | v3.49.1        | 2025-03-05  |
+| 🟢 successful | Windows 11 | x   |     | v3.3.16.1      | v3.49.0        | 2025-03-05  |
 
 ## Getting started
 
