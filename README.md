@@ -61,14 +61,6 @@ This been said, my assumption is you are familiar with SQL in general (at least 
 
 [^2]: The database schema example is based on a common TODO list structure.
 
-<details>
-<summary>🖼 How the data should be displayed</summary>
-
-![sqlite-showcase](./assets/images/sqlite-showcase.gif)
-
-</details>
-
-
 #### *Logging and error handling*
 
 The most possible failures are handled through the whole project. So you will find the usage of `SetError()` and `_Log()` a lot. In case of simply running the script, you will get the log statements printed to the console output. In case you build (compile) the application, a `.\log\20250217220310.log` file will contain the information.
